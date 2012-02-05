@@ -1,0 +1,14 @@
+{
+  "git_projects": [
+    ["brewstrap-presentation", "https://github.com/schubert/presentation-teaching_your_team_chef.git"],
+    ["presentation-teaching_your_team_chef", "https://github.com/schubert/presentation-teaching_your_team_chef.git"],
+    ["chef_cap-example", "git://github.com/schubert/chef_cap-example.git"]
+  ],
+  "run_list": [
+    "osx",
+    "brewstrap-presentation::ack",
+    "pivotal_workstation::git_projects",
+    "brewstrap-presentation::presentation",
+    "brewstrap-presentation::chef_cap"
+  ]
+}
